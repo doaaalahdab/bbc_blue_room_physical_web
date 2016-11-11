@@ -1,0 +1,259 @@
+
+/* CSS Document */
+/* Layout
+ ========================================================================== */
+/*Box model-box sizing*/
+*, *:before, *:after 
+{
+ box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ -ms-box-sizing: border-box;
+ -o-box-sizing: border-box;
+}
+
+html 
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align:left;  
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;  
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  padding : 0;
+  border : 0;
+  font : inherit;
+  vertical-align : baseline;
+  width: 100%;
+}
+article, figure, footer, header, main, nav, section {
+display : block;
+}
+
+/*
+Body 
+*/
+body
+{
+  vertical-align : baseline;
+ letter-spacing: 3%;
+ color:#000000;
+}
+/*
+Main 
+*/
+main{
+    margin: auto;
+}
+/* Links
+ ==========================================================================*/
+a ,a:visited,a:link 
+  {
+    color : #000000;
+   text-decoration: none;
+  }
+a:hover, a:active 
+  {
+    color: #183c18;
+    text-decoration: none;
+  }
+
+a:focus
+ {
+outline:solid;
+color:#C46262;
+overflow: hidden;
+ }
+/*Sections and some of their content styles
+ ==========================================================================*/
+#home, #booking, #contact{
+display: block;
+width: 100%;
+min-height: 100%;
+padding: 40px 0px 20px;
+  font-size : 1.2em;
+  }
+#home{
+background-color: #6699FF;
+  }
+#contact{
+  background-color: #D40026;
+  }
+#booking{
+  background-color: #ff7f00;
+  }
+/*navigation
+ ==========================================================================*/
+  .navlist
+  {
+  list-style:none;
+  white-space : nowrap;
+  position:absolute;
+  padding-left:15%;
+  }
+.navlist a, .navlist a:link, .navlist a:visited  
+  {
+  color: #000000;
+  text-decoration: none;
+  }
+.navlist a:hover, .navlist a:active , .navlist li a:active 
+  {
+    background-color: #ffffff; 
+    color: #000000;
+    text-decoration: none; 
+    border-radius: 10px; 
+  }
+  li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding:15%;
+}
+
+.home_menu_icon, .booking_menu_icon, .contact_menu_icon, .physical_web_menu_icon{
+border: 5px solid black;
+border-radius: 10px;
+background-color: #ffffff;
+font-size: 1rem;
+  }
+
+/* columns
+   ========================================================================== */
+.column {
+float: left;
+padding:10px;
+}
+.column.full {
+ width: 100%; 
+ }
+.column.two-thirds { 
+width: 75%; 
+}
+.column.half {
+ width: 50%; 
+ }
+.column.third { 
+width: 30%; 
+}
+.column.fourth {
+ width: 25%; 
+ }
+
+/* Clearfix
+   ========================================================================== 
+*/
+.clearfix:before,
+.clearfix:after 
+{
+content: " "; /* 1 */
+display: table; /* 2 */
+}
+
+.clearfix:after 
+{
+ clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix 
+{
+*zoom: 1;
+}
+
+ 
+  
+/* Typography 
+ ==========================================================================*/
+
+h1
+ {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 68px;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #ffffff;
+  text-shadow: 23px -12px 10px #000000;
+  -moz-text-shadow: 23px -12px 10px #000000;
+  -webkit-text-shadow: 23px -12px 10px #000000;
+  -ms-text-shadow: 23px -12px 10px #000000;
+  -o-text-shadow: 23px -12px 10px #000000;
+  font-weight: 850;
+clear: none;  
+background-color:#6699FF;}
+  
+h2 
+{
+ color: #ffffff;
+font-family: 'Righteous';
+-moz-font-family:'Righteous';
+-webkit-font-family:'Righteous';
+-ms-font-family:'Righteous';
+-o-font-family:'Righteous';
+font-size: 35px;
+font-weight: normal;
+line-height: 60px;
+margin: 10px 0 20px;
+text-transform: uppercase;
+text-shadow: px 2px 0 #000000;
+-moz-text-shadow: 2px 2px 0 #000000;
+-webkit-text-shadow: 2px 2px 0 #000000;
+-ms-text-shadow: 2px 2px 0 #000000;
+-o-text-shadow: 2px 2px 0 #000000;
+margin: 10px 0 24px; 
+text-align: center;
+}
+
+/*
+Images
+*/
+ .image
+ {
+  max-width: 100%;
+  height: auto;
+  float: left;
+}
+
+
+.image:hover
+{
+-webkit-box-shadow : 0 0 2px 2px #333333;
+-moz-box-shadow : 0 0 2px 2px #333333;
+-ms-box-shadow : 0 0 2px 2px #333333;
+-o-box-shadow : 0 0 2px 2px #333333;
+box-shadow : 0 0 2px 2px #333333;
+}
+
+/*Border radius
+ ==========================================================================*/
+a:focus
+{
+    border-radius:11%;
+  -moz-border-radius:11%;
+ -webkit-border-radius:11%;
+ -ms-border-radius:11%;
+ -o-border-radius:11%;
+}
+
+/*Containers
+ ==========================================================================*/
+.home_container{}
+.connect_container{}
+.holodeck_container{}
+.create_container{}
+.interact_container{}
+.booking_container{}
+.contact_container{}
+/*Footer
+ ==========================================================================*/
+
+footer
+ {
+  background-color: #FF847B;
+  text-align:center;
+  }
+
+
